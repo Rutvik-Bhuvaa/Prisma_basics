@@ -22,5 +22,6 @@ model Todo{
   title    String
   description String
   done Boolean
-  userId Int 
+  userId Int
+  time DateTime @default(now()) 
 }
